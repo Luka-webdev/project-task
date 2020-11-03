@@ -1,5 +1,7 @@
 /*Global*/
 
+$main-font: "Rubik", sans-serif;
+
 body {
   margin: 0;
   padding: 0;
@@ -33,7 +35,7 @@ header {
           color: khaki;
           font-size: 1.5vw;
           line-height: 1.5;
-          font-family: arial;
+          font-family: $main-font;
         }
       }
     }
@@ -55,6 +57,7 @@ header {
     h1 {
       font-size: 5vw;
       letter-spacing: 3px;
+      font-family: $main-font;
     }
     a {
       color: white;
@@ -63,8 +66,59 @@ header {
       background: sandybrown;
       border-radius: 5px;
       font-weight: 700;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: $main-font;
       font-size: 1.5vw;
     }
+  }
+}
+
+/*services*/
+
+.services {
+  width: 100%;
+  p {
+    color: gray;
+  }
+}
+.services-title {
+  width: 100%;
+  text-align: center;
+  padding: 6vw 0 3vw 0;
+  h4 {
+    margin: 0;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3vw;
+  }
+  p {
+    margin: 0;
+    font-size: 1.3vw;
+  }
+}
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5vw 0 4vw 0;
+}
+.box {
+  width: 20vw;
+  text-align: center;
+  i {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    line-height: 70px;
+    color: yellowgreen;
+    border-radius: 50%;
+    border: 2px solid yellowgreen;
+  }
+  h5 {
+    font-size: 1.5vw;
+    margin: 2vw 0 1vw 0;
+    font-family: $main-font;
+  }
+  p {
+    font-size: 1.2vw;
   }
 }
