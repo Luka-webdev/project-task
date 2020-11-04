@@ -170,14 +170,17 @@ footer {
   width: 100%;
 }
 .content {
-  width: 42vw;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  position: relative;
+  width: 100%;
   margin: 0;
   padding: 2vw 0 2vw 0;
   ul {
     list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
     li {
       display: inline-block;
       text-align: center;
@@ -193,6 +196,10 @@ footer {
     }
   }
   P {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(50%);
     margin: 0;
     font-size: 1.3vw;
     color: gray;
