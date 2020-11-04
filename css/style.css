@@ -191,4 +191,46 @@ header main a {
   height: 100%;
   object-fit: cover;
 }
+
+/*footer*/
+footer {
+  width: 100%;
+}
+
+.content {
+  width: 42vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0;
+  padding: 2vw 0 2vw 0;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.content ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.content ul li i {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  line-height: 50px;
+  border-radius: 50%;
+  background: darkslategray;
+  color: white;
+}
+
+.content P {
+  margin: 0;
+  font-size: 1.3vw;
+  color: gray;
+}
 /*# sourceMappingURL=style.css.map */
