@@ -33,8 +33,10 @@ header {
 }
 
 header nav {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding-top: 3vw;
 }
 
@@ -112,8 +114,10 @@ header main a {
 }
 
 .boxes {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 1.5vw 0 4vw 0;
 }
 
@@ -158,9 +162,12 @@ header main a {
 }
 
 .articles {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .articles article {
@@ -194,7 +201,7 @@ footer {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 2vw 0 2vw 0;
+  padding: 3vw 0 3vw 0;
 }
 
 .content ul {
@@ -231,4 +238,25 @@ footer {
   color: gray;
 }
 
+/*media*/
+@media (max-width: 600px) {
+  /*services*/
+  .box i {
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    line-height: 45px;
+  }
+  /*portfolio*/
+  .articles article {
+    width: 40%;
+  }
+  /*footer*/
+  .content ul li i {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

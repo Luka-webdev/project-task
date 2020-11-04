@@ -173,7 +173,7 @@ footer {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 2vw 0 2vw 0;
+  padding: 3vw 0 3vw 0;
   ul {
     list-style: none;
     position: absolute;
@@ -203,5 +203,39 @@ footer {
     margin: 0;
     font-size: 1.3vw;
     color: gray;
+  }
+}
+
+/*media*/
+
+@media (max-width: 600px) {
+  /*services*/
+
+  .box {
+    i {
+      width: 45px;
+      height: 45px;
+      font-size: 25px;
+      line-height: 45px;
+    }
+  }
+
+  /*portfolio*/
+
+  .articles {
+    article {
+      width: 40%;
+    }
+  }
+
+  /*footer*/
+
+  .content ul li {
+    i {
+      width: 25px;
+      height: 25px;
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }
